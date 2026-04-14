@@ -1,5 +1,4 @@
-<!-- Unit 11 Project
-Requirements
+<!---Requirements
 [  ] $() Select by Element, ID AND Class 
 [  ] Use Three Different jQuery Methods 
 [  ] Add Five CSS Declarations
@@ -15,45 +14,59 @@ Select ONE Additional
 
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8" />
-    <title>Unit 11 Project</title>
+    <title>idk what to do</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+
+
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <ol>
+    <button id="mem1-button">Choice #1</button>
+    <button id="mem2-button">Choice #2</button>
+    <button id="mem3-button">Chocie #3</button>
+
+
+    <h1>Pick a random button and it will tell you about yourself!</h1>
+    
+
+    <ul>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1">Choice #1</h3>
+        <p>Supercalifragilisticexpialidocious</p>
       </li>
 
-      <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
-      </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="mem2">Choice #2</h3>
+        <p>The best! Also did you only pick this just because you like even numbers?</p>
       </li>
-    </ol>
+
+
+      <li>
+        <h3 id="mem3">Choice #3</h3>
+        <p>You have enough survival instinct to survive the apocalypse......maybe</p>
+      </li>
+
+    </ul>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+
 
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
       });
 
+
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
       });
+
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
@@ -61,7 +74,7 @@ Select ONE Additional
         $("#mem3").text("Coding Parties! 🎉");
       });
 
-
+$("h1").css("color","rgb(251, 111, 146)");
     </script>
   </body>
 </html>
