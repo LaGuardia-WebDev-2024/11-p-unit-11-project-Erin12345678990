@@ -1,11 +1,11 @@
 <!---Requirements
 [  ] $() Select by Element, ID AND Class 
 [  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
+[ y ] Add Five CSS Declarations
 [  ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ y] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -25,7 +25,7 @@ Select ONE Additional
   <body>
     <button id="mem1-button">Choice #1</button>
     <button id="mem2-button">Choice #2</button>
-    <button id="mem3-button">Chocie #3</button>
+    <button id="mem3-button">Choice #3</button>
 
 
     <h1>Pick a random button and it will tell you about yourself!</h1>
@@ -33,48 +33,67 @@ Select ONE Additional
 
     <ul>
       <li>
-        <h3 id="mem1">Choice #1</h3>
-        <p>Supercalifragilisticexpialidocious</p>
+        <h2 id="mem1">Choice #1</h3>
+        <p id="ans1">Supercalifragilisticexpialidocious</p>
       </li>
 
 
       <li>
-        <h3 id="mem2">Choice #2</h3>
-        <p>The best! Also did you only pick this just because you like even numbers?</p>
+        <h2 id="mem2">Choice #2</h3>
+        <p id="ans2">The best! Also did you only pick this just because you like even numbers?</p>
       </li>
 
 
       <li>
-        <h3 id="mem3">Choice #3</h3>
-        <p>You have enough survival instinct to survive the apocalypse......maybe</p>
+        <h2 id="mem3">Choice #3</h3>
+        <p id="ans3">You have enough survival instinct to survive the apocalypse......maybe</p>
       </li>
+
+      <img src="https://preview.redd.it/random-question-but-does-anyone-have-versions-of-this-cat-v0-ya8qikz9kn0f1.png?width=640&crop=smart&auto=webp&s=2487b53aa5d4ac4e710f7717a6850c83562272ab"/>
+
+      <img src="https://assets.userstyles.org/assets_packs/type=style/user_id=3706274/screenshot_443926fa-628a-4281-938b-fb7ffd72fd65.png"/>
+
 
     </ul>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+$("#ans1").hide();
+$("#ans2").hide();
+$("#ans3").hide();
+
 
 
       // ======================== Button #1
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "rgb(255, 143, 171)");
+        $("#ans1").show();
       });
 
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "rgb(255, 143, 171)");
+        $("#ans2").show();
       });
 
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+        $("#mem3").css("color", "rgb(255, 143, 171)");
+        $("#ans3").show();
       });
 
 $("h1").css("color","rgb(251, 111, 146)");
+$("p").css("color","rgb(255, 143, 171)");
+$("p").css("font-size","25px");
+
+$("#mem1").css("color","rgb(255, 194, 209)");
+$("#mem2").css("color","rgb(255, 194, 209)");
+$("#mem3").css("color","rgb(255, 194, 209)");
+
+
     </script>
   </body>
 </html>
