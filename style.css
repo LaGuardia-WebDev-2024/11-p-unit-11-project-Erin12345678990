@@ -11,3 +11,25 @@ h1 {
   font-family: "Poetsen One", sans-serif;
   text-align: center;
 }
+
+#yaba{
+  border-radius: 70px;
+  border: 10px solid #ffc2d1;
+}
+
+#marp{
+  width: 500px;
+  display:flex-start;
+  justify-content: space-evenly;
+}
+
+#cinna{
+  width: 500px;
+  justify-content: flex-end;
+display:space-evenly;
+}
+li::marker{
+content: "❤️";
+font-size: .65em;
+color: #ffc2d1;
+}

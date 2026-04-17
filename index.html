@@ -1,6 +1,6 @@
 <!---Requirements
 [  y] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
+[ y ] Use Three Different jQuery Methods 
 [ y ] Add Five CSS Declarations
 [ y] Include Three Images
 
@@ -66,13 +66,24 @@ Select ONE Additional
 </div>
 
   </ul>
-<img src="https://preview.redd.it/random-question-but-does-anyone-have-versions-of-this-cat-v0-ya8qikz9kn0f1.png?width=640&crop=smart&auto=webp&s=2487b53aa5d4ac4e710f7717a6850c83562272ab"/>
 
 
-<img src="https://assets.userstyles.org/assets_packs/type=style/user_id=3706274/screenshot_443926fa-628a-4281-938b-fb7ffd72fd65.png"/>
+<center>
+<img id="yaba"
+src="https://preview.redd.it/random-question-but-does-anyone-have-versions-of-this-cat-v0-ya8qikz9kn0f1.png?width=640&crop=smart&auto=webp&s=2487b53aa5d4ac4e710f7717a6850c83562272ab"
+
+/>
+</center>
 
 
-<img src = "https://i.guim.co.uk/img/media/c3b655bf167fae8d19c06b8faf69b0fce9576a3d/0_128_1691_1015/master/1691.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=2f49ca01ece2e1f1bae1c890c74d043e"/>
+<img id="cinna"
+src="https://assets.userstyles.org/assets_packs/type=style/user_id=3706274/screenshot_443926fa-628a-4281-938b-fb7ffd72fd65.png"
+/>
+
+
+<img id="marp"
+src = "https://i.guim.co.uk/img/media/c3b655bf167fae8d19c06b8faf69b0fce9576a3d/0_128_1691_1015/master/1691.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=2f49ca01ece2e1f1bae1c890c74d043e"
+/>
 
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -80,31 +91,33 @@ Select ONE Additional
 $("#ans1").hide();
 $("#ans2").hide();
 $("#ans3").hide();
-
+$("#marp").hide();
+$("#cinna").hide();
 
       // ======================== Button #1
       $("#mem1-button").click(function () {
-
-        $("#mem1").css("color", "rgb(255, 143, 171)");
+$("#mem1").css("color", "rgb(255, 143, 171)");
         $("#ans1").show();
-
+$("#marp").show();
       });
 
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "rgb(255, 143, 171)");
+      $("#mem2").css("color", "rgb(255, 143, 171)");
         $("#ans2").show();
+        $("#cinna").show();
       });
 
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "rgb(255, 143, 171)");
+         $("#mem3").css("color", "rgb(255, 143, 171)");
         $("#ans3").show();
       });
 
-$("h1").css("color","rgb(251, 111, 146)");
+
+         $("h1").css("color","rgb(251, 111, 146)");
 $("p").css("color","rgb(255, 143, 171)");
 $("p").css("font-size","25px");
 
