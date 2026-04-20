@@ -19,14 +19,17 @@ h1 {
 
 #marp{
   width: 500px;
-  display:flex-start;
-  justify-content: space-evenly;
+  display:space-around;
+  justify-content: flex-start;
+  margin-left: 1200px;
 }
 
 #cinna{
   width: 500px;
   justify-content: flex-end;
 display:space-evenly;
+margin-left: 100px;
+
 }
 li::marker{
 content: "❤️";
